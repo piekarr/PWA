@@ -15,6 +15,7 @@ jobs:
   condition: or(eq(variables['Build.Reason'], 'Manual'),or(eq(variables['Build.Reason'], 'PullRequest'),eq(variables['Build.Reason'], 'IndividualCI')))
   pool:
     vmImage: ubuntu-latest
+    name: default 
   variables:
   - group: Azure-Static-Web-Apps-polite-mushroom-019fedb03-variable-group
   steps:
